@@ -2,17 +2,22 @@
   --white: #dedede;
   --pure-white: #FFFFFF;
   --black: #050505;
-  --dark-purple: hsl(271, 75%, 30%);
-  --lighter-purple: hsl(271, 100%, 50%);
+  --dark-purple: #4e1386;
+  --lighter-purple: #8400ff;
 
   --cool-red: #e66465;
   --cool-blue: #9198e5;
 
   
   
-  --header-background-gradient: linear-gradient( var(--dark-purple), hsl(271, 75%, 15%));
-  --header-button-highlight-gradient: linear-gradient( var(--lighter-purple), hsl(271, 100%, 30%));
-  /* var(--dark-purple); */
-
-  
+  --header-background-gradient: 
+  linear-gradient( 
+    rgb(78, 19, 134, 0.6) 0%,
+    rgba(78, 19, 134, 0.2) 100%
+  );
+  --header-button-highlight-gradient:
+  linear-gradient(    
+    rgb(79 19 134 / 100%),
+    rgb(79 19 134 / 100%)
+  );
 }
