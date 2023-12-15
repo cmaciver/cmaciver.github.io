@@ -1,5 +1,99 @@
-body {
-	margin: 0;
-	font-family: sans-serif !important;
-	background-color: red !important;
+@import "colors.css";
+
+/* Pagewide setup stuff */
+html {
+	font-size: 62.5%;
 }
+
+body {
+	font-size: 1rem;
+	font-family: sans-serif !important;
+
+	margin: 0;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+/* Header styles */
+#common-header {
+	height: fit-content;
+	background: var(--header-background-gradient);
+}
+
+#common-header nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	padding: 1rem;
+}
+#common-header ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+
+	margin: 0;
+	padding: 0;
+}
+
+#common-header a {
+	display: block;
+	text-decoration: none;
+	color: var(--white);
+	padding: 1rem 2rem;
+	position: relative;
+	background: none;
+	z-index: 100;
+	
+	transition: .1s;
+}
+
+#common-header a::before {
+	border-radius: inherit;
+	background:var(--header-button-highlight-gradient);
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	top: 0; left: 0;
+	opacity: 0;
+	width: 100%;
+	z-index: -100;
+	transition: opacity .2s;
+}
+
+#common-header a:hover {
+	color: var(--pure-white);
+
+}
+
+#common-header a:hover:before {
+	opacity: 1;
+}
+
+#common-header #named-link {
+	font-size: 3rem;
+	margin-right: 4rem;
+	display: block;
+	text-decoration: none;
+
+	padding: 1rem 2rem;
+	border-radius: 3rem;
+	
+	transition: .1s;
+}
+
+#common-header li {
+	list-style-type: none;
+}
+
+#common-header li a {
+	font-size: 2rem;
+
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	
+	transition: .1s;
+}
+

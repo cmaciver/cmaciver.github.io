@@ -1,0 +1,18 @@
+:root {
+  --white: #dedede;
+  --pure-white: #FFFFFF;
+  --black: #050505;
+  --dark-purple: hsl(271, 75%, 30%);
+  --lighter-purple: hsl(271, 100%, 50%);
+
+  --cool-red: #e66465;
+  --cool-blue: #9198e5;
+
+  
+  
+  --header-background-gradient: linear-gradient( var(--dark-purple), hsl(271, 75%, 15%));
+  --header-button-highlight-gradient: linear-gradient( var(--lighter-purple), hsl(271, 100%, 30%));
+  /* var(--dark-purple); */
+
+  
+}
