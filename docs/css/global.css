@@ -22,6 +22,8 @@ body {
 
 	position: sticky;
 	top: 0;
+
+	z-index: 100;
 }
 
 #common-header nav {
@@ -32,6 +34,7 @@ body {
 
 	padding: 1rem;
 }
+
 #common-header ul {
 	display: flex;
 	flex-direction: row;
@@ -49,18 +52,19 @@ body {
 	position: relative;
 	background: none;
 	z-index: 100;
-	
+
 	transition: .1s;
 }
 
 #common-header a::before {
 	border-radius: inherit;
-	background:var(--header-button-highlight-gradient);
+	background: var(--header-button-highlight-gradient);
 	content: '';
 	display: block;
 	height: 100%;
 	position: absolute;
-	top: 0; left: 0;
+	top: 0;
+	left: 0;
 	opacity: 0;
 	width: 100%;
 	z-index: -100;
@@ -84,7 +88,7 @@ body {
 
 	padding: 1rem 2rem;
 	border-radius: 3rem;
-	
+
 	transition: .1s;
 }
 
@@ -97,7 +101,82 @@ body {
 
 	padding: 1rem 2rem;
 	border-radius: 2rem;
-	
+
 	transition: .1s;
 }
 
+
+
+
+
+/* SLICK SLIDER
+.slick-arrow {
+	visibility: hidden;
+}
+
+.slick-arrow:hover {
+	cursor: pointer;
+}
+
+.slick-arrow:before {
+	z-index: 99;
+	visibility: visible;
+	position: absolute;
+	font-family: "slick";
+
+	color: white;
+	background-color: aqua;
+	border-radius: 100px;
+	font-size: 30px;
+
+	height: 30px;
+	width: 30px;
+
+	display: inline-table;
+}
+
+.slick-prev:before {
+	content: '←';
+	left: 1%;
+	top: calc(50% - 15px);
+}
+
+.slick-next:before {
+	content: '→';
+	right: 1%;
+	bottom: calc(50% - 15px);
+} */
+
+.slick-arrow {
+	z-index: 1;
+	width: 40px;
+	height: 40px;
+}
+
+.slick-arrow:before {
+	font-size: 30px;
+}
+.slick-next {
+	right: 0;
+}
+.slick-prev {
+	left: 0;
+}
+
+.btn-wrap {
+	text-align: center;
+	width: 100%;
+}
+button {
+	background-color: #ddd;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	margin: 10px;
+	font-size: 18px;
+	font-weight: 600;
+	transition: all 0.5s;
+}
+button.slick-disabled {
+	opacity: 0.6;
+}

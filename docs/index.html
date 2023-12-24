@@ -1,55 +1,108 @@
 <html>
-  <head>
-    <title>Camden MacIver</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/css/global.css" type="text/css">
-  </head>
 
-  <body>
-    This is my homepage
-    <image src="/images/crabcake.jpg" style="width: max-content"></image>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-    <p>stuff</p>
-  </body>
+<head>
+  <title>Camden MacIver</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/global.css" type="text/css">
 
-  <script src="/js/header.js"></script> <!-- This script loads in a custom header, but it's down here so the page loads first -->
+
+  <!-- slick slider! -->
+  <link rel="stylesheet" href="/css/slick.css" type="text/css" />
+  <link rel="stylesheet" href="/css/slick-theme.css" type="text/css" />
+
+</head>
+
+<body>
+  This is my homepage
+  <div id="hero-slider">
+    <div style="height: 400px; ">
+      <image src="/images/crabcake.jpg"></image>
+    </div>
+    <div style="height: 400px; ">
+      <image src="/images/crabcake.jpg"></image>
+    </div>
+    <div style="height: 400px; ">
+      <image src="/images/crabcake.jpg"></image>
+    </div>
+    <div style="height: 400px; ">
+      <image src="/images/crabcake.jpg"></image>
+    </div>
+    <div style="height: 400px; ">
+      <image src="/images/crabcake.jpg"></image>
+    </div>
+  </div>
+
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+  <p>stuff</p>
+
+
+  <script src="/js/header.js"></script>
+  <!-- This script loads in a custom header, but it's down here so the page loads first -->
+  <script src="/js/jquery.js"></script>
+
+  <!-- <script>
+      $( document ).ready(function() {
+          $( "p" ).click(function( event ) {
+              alert( "The link will no longer take you to jquery.com" );
+              event.preventDefault();
+              console.log("pressed");
+          });
+      });
+    </script> -->
+
+  <!-- slick slider! -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('#hero-slider').slick({
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      arrows: true
+    });
+  </script>
+
+
+</body>
+
+
 </html>
